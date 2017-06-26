@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/live_info_content"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/info_bg"
+        >
+
+         <Button
+             android:id="@+id/tackpic"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:textSize="18dp"
+             android:text="拍照"
+             android:paddingLeft="15dp"
+             android:textColor="#1a1a1a"
+             android:background="@null"
+             android:gravity="center_vertical" />
+
+         <Button
+             android:id="@+id/selec_pic"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:textSize="18dp"
+             android:paddingLeft="15dp"
+             android:text="相册"
+             android:textColor="#1a1a1a"
+             android:background="@null"
+             android:layout_alignParentBottom="true"
+             android:gravity="center_vertical" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_color"
+            android:layout_centerInParent="true"
+            ></RelativeLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mi_vr_alert_dialog_bg">#252a35</color>
+    <color name="mi_vr_alert_dialog_btn">#8d929e</color>
+    <color name="mi_vr_alert_dialog_btn_pressed">#99a2a5ab</color>
+    <color name="mi_vr_alert_dialog_content">#8d929e</color>
+    <color name="mi_vr_alert_dialog_title">#FFFFFF</color>
+    <dimen name="alert_dialog_btn_height">43.33dip</dimen>
+    <dimen name="dlg_size_24">8dip</dimen>
+    <dimen name="dlg_size_28">9.33dip</dimen>
+    <dimen name="dlg_size_35">11.67dip</dimen>
+    <dimen name="dlg_size_40">13.33dip</dimen>
+    <dimen name="dlg_size_42">14dip</dimen>
+    <dimen name="dlg_size_46">15.33dip</dimen>
+    <string name="OK">确定</string>
+    <string name="cancel">取消</string>
+    <string name="hmd_notice">打开此应用，需要将手机插入小米VR眼镜</string>
+    <string name="not_compatible_desc">手机型号不支持该应用，请升级手机系统或更换新型号手机</string>
+    <string name="not_compatible_title">应用启动失败</string>
+    <string name="waiting_for_hmd">请插入VR眼镜</string>
+    <style name="VR"/>
+    <style name="VR.AlertDialog">
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+        <!--
+        <item name="android:layout">@layout/mi_vr_alert_dialog</item>
+        <item name="*android:listLayout">@layout/mi_vr_select_dialog</item>
+        <item name="*android:listItemLayout">@layout/mi_vr_select_dialog_item</item>
+        <item name="*android:multiChoiceItemLayout">@layout/mi_vr_select_dialog_multichoice</item>
+        <item name="*android:singleChoiceItemLayout">@layout/mi_vr_select_dialog_singlechoice</item>
+        -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/VR.Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="VR.Animation"/>
+    <style name="VR.Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/mi_vr_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/mi_vr_dialog_exit</item>
+    </style>
+    <style name="VR.Theme"/>
+    <style name="VR.Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowAnimationStyle">@style/VR.Animation.Dialog</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:buttonBarStyle">@android:style/Holo.Light.ButtonBar.AlertDialog</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+	
+	
+
+<style name="Theme.Transparent" parent="android:Theme">
+
+<item name="android:windowIsTranslucent">true</item>
+
+<item name="android:windowBackground">@android:color/transparent</item>
+
+<item name="android:windowContentOverlay">@null</item>
+
+<item name="android:windowNoTitle">true</item>
+
+<item name="android:windowIsFloating">true</item>
+
+<item name="android:backgroundDimEnabled">false</item>
+
+<item name="android:windowAnimationStyle">@null</item>
+
+</style>
+</resources>

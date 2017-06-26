@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_title"
+    >
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_bg"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_titlebar_arrow"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="标题"
+        style="@style/firstTxt"
+
+        />
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:text="注册"
+        android:textSize="15sp"
+        android:paddingRight="15dp"
+        android:paddingLeft="5dp"
+        android:minWidth="2dp"
+        android:minHeight="2dp"
+        android:background="@drawable/regist_btn_right_bg"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+
+
+        />
+</FrameLayout>

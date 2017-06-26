@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mmmm"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+
+    >
+    <!--    -->
+    <LinearLayout
+        android:id="@+id/xz_layout_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@null"
+        >
+        <TabHost
+
+            android:id="@android:id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="48dp"
+                    />
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.0"
+                    android:visibility="gone" />
+
+                <!-- android:background="@drawable/bottom_bar_bg" -->
+                <LinearLayout
+                    android:id="@+id/main_tab_group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="bottom"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+
+                    >
+
+
+                    <RelativeLayout
+                        android:id="@+id/first_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/bg_tabber_under"
+                        android:layout_gravity="bottom"
+                        >
+                        <ImageView
+                            android:id="@+id/first_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:src="@drawable/main_p" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/second_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:layout_gravity="bottom"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/bg_tabber_under"
+                                ></RelativeLayout>
+
+                            <!--RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/bg_tabbar_right"
+                                ></RelativeLayout-->
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/second_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:src="@drawable/vr_btn_bg" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/three_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/bg_tabber_under"
+                        android:layout_gravity="bottom"
+                        >
+
+                        <ImageView
+                            android:id="@+id/three_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:src="@drawable/person_n" />
+
+                    </RelativeLayout>
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/four_layout"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1.0"-->
+                    <!--android:layout_gravity="bottom"-->
+                    <!--android:gravity="bottom"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:background="@null"-->
+
+                    <!-->-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/four_btn"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical|center_horizontal"-->
+                    <!--android:layout_weight="1.0"-->
+                    <!--android:background="@null"-->
+                    <!--android:src="@drawable/four_normal" />-->
+
+                    <!--</LinearLayout>-->
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </TabHost>
+    </LinearLayout>
+
+
+
+    <!--
+     <LinearLayout
+         android:id="@+id/xin_skapelayout"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_weight="1.0"
+         >
+         <ImageView
+             android:id="@+id/xz_skapel"
+             android:src="@drawable/xz_n_error"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+
+             />
+
+
+
+     </LinearLayout>
+          -->
+
+
+</RelativeLayout>

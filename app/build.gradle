@@ -1,0 +1,173 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 24
+    buildToolsVersion "23.0.1"
+
+    signingConfigs {
+        config {
+            keyAlias 'meetvr'
+            keyPassword '123456'
+            storeFile file(projectDir.parent + '/meetvr.keystore')
+            storePassword '123456'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.meetvr.liveshowclient"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 9
+        versionName '1.3.2'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    productFlavors {
+        MeetVR {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "MeetVR",CHANNEL_ID_VALUE: "0"]
+            minSdkVersion 19
+            applicationId 'com.meetvr.liveshowclient'
+            signingConfig signingConfigs.config
+            targetSdkVersion 23
+            versionCode 9
+            versionName '1.3.2'
+        }
+
+        YingYongBao {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "YingYongBao",CHANNEL_ID_VALUE: "1"]
+            minSdkVersion 19
+            applicationId 'com.meetvr.liveshowclient'
+            signingConfig signingConfigs.config
+            targetSdkVersion 23
+            versionCode 9
+            versionName '1.3.2'
+        }
+
+        QiHu360 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "QiHu360",CHANNEL_ID_VALUE: "2"]
+            minSdkVersion 19
+            applicationId 'com.meetvr.liveshowclient'
+            signingConfig signingConfigs.config
+            targetSdkVersion 23
+            versionCode 9
+            versionName '1.3.2'
+        }
+
+        BaiDu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "BaiDu",CHANNEL_ID_VALUE: "4"]
+            minSdkVersion 19
+            applicationId 'com.meetvr.liveshowclient'
+            signingConfig signingConfigs.config
+            targetSdkVersion 23
+            versionCode 9
+            versionName '1.3.2'
+        }
+
+        XiaoMi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "XiaoMi",CHANNEL_ID_VALUE: "5"]
+            minSdkVersion 19
+            applicationId 'com.meetvr.liveshowclient'
+            signingConfig signingConfigs.config
+            targetSdkVersion 23
+            versionCode 9
+            versionName '1.3.2'
+        }
+
+        WanDouJia {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "WanDouJia",CHANNEL_ID_VALUE: "6"]
+            minSdkVersion 19
+            applicationId 'com.meetvr.liveshowclient'
+            signingConfig signingConfigs.config
+            targetSdkVersion 23
+            versionCode 9
+            versionName '1.3.2'
+        }
+
+        HuaWei {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "HuaWei",CHANNEL_ID_VALUE: "7"]
+            minSdkVersion 19
+            applicationId 'com.meetvr.liveshowclient'
+            signingConfig signingConfigs.config
+            targetSdkVersion 23
+            versionCode 9
+            versionName '1.3.2'
+        }
+
+        OPPO {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "OPPO",CHANNEL_ID_VALUE: "8"]
+            minSdkVersion 19
+            applicationId 'com.meetvr.liveshowclient'
+            signingConfig signingConfigs.config
+            targetSdkVersion 23
+            versionCode 9
+            versionName '1.3.2'
+        }
+
+        Vivo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Vivo",CHANNEL_ID_VALUE: "9"]
+            minSdkVersion 19
+            applicationId 'com.meetvr.liveshowclient'
+            signingConfig signingConfigs.config
+            targetSdkVersion 23
+            versionCode 9
+            versionName '1.3.2'
+        }
+
+        MeiZu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "MeiZu",CHANNEL_ID_VALUE: "10"]
+            minSdkVersion 19
+            applicationId 'com.meetvr.liveshowclient'
+            signingConfig signingConfigs.config
+            targetSdkVersion 23
+            versionCode 9
+            versionName '1.3.2'
+        }
+
+        LeTV {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "LeTV",CHANNEL_ID_VALUE: "11"]
+            minSdkVersion 19
+            applicationId 'com.meetvr.liveshowclient'
+            signingConfig signingConfigs.config
+            targetSdkVersion 23
+            versionCode 9
+            versionName '1.3.2'
+        }
+
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':unity-vr')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    testCompile 'junit:junit:4.12'
+    compile project(path: ':volley')
+    compile project(path: ':share')
+    compile 'com.github.jdsjlzx:LRecyclerView:1.2.4'
+    compile 'com.qiniu:qiniu-android-sdk:7.2.+'
+    compile(name: 'gvr_android_common', ext: 'aar')
+    compile(name: 'unitygvractivity', ext: 'aar')
+    compile 'com.umeng.analytics:analytics:latest.integration'
+}

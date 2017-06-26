@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Share</string>
+
+    <string name="dialog_error_title">升级失败</string>
+
+    <string name="dialog_downfailed_msg">升级失败了！</string>
+
+    <string name="dialog_downfailed_btn">重新下载</string>
+
+    <string name="dialog_downfailed_btnnext">取消</string>
+
+    <string name="dialog_update_title">升级提示</string>
+
+    <string name="dialog_update_msg">是否要进行升级？</string>
+
+    <string name="dialog_force_update_msg">有重要更新，升级后方可继续使用该应用，是否要进行升级？</string>
+
+    <string name="dialog_update_btnupdate">开始升级</string>
+
+    <string name="dialog_downloading_msg">升级中 ···</string>
+
+    <string name="dialog_update_btnnext">取消</string>
+    <string name="zjszxbb">已经是最新版本！</string>
+
+    <string name="is_downing">正在下载</string>
+</resources>
